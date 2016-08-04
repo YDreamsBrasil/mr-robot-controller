@@ -15,6 +15,10 @@
 		FE7D02A01D52F7D900431327 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE7D029E1D52F7D900431327 /* LaunchScreen.storyboard */; };
 		FE7D02AB1D52F7DA00431327 /* MrRobotControlPadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7D02AA1D52F7DA00431327 /* MrRobotControlPadTests.swift */; };
 		FE7D02B61D52F7DA00431327 /* MrRobotControlPadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7D02B51D52F7DA00431327 /* MrRobotControlPadUITests.swift */; };
+		FE7D02C61D53426900431327 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7D02C41D53426900431327 /* Starscream.framework */; };
+		FE7D02C81D53439B00431327 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7D02C71D53439B00431327 /* TabController.swift */; };
+		FE7D02CA1D5344C000431327 /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE7D02C41D53426900431327 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FE7D02CD1D5345C200431327 /* StartupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7D02CC1D5345C200431327 /* StartupController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FE7D02CB1D5344C000431327 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FE7D02CA1D5344C000431327 /* Starscream.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		FE7D02901D52F7D900431327 /* MrRobotControlPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MrRobotControlPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7D02931D52F7D900431327 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +67,9 @@
 		FE7D02B11D52F7DA00431327 /* MrRobotControlPadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MrRobotControlPadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7D02B51D52F7DA00431327 /* MrRobotControlPadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrRobotControlPadUITests.swift; sourceTree = "<group>"; };
 		FE7D02B71D52F7DA00431327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE7D02C41D53426900431327 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		FE7D02C71D53439B00431327 /* TabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		FE7D02CC1D5345C200431327 /* StartupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartupController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE7D02C61D53426900431327 /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +101,7 @@
 		FE7D02871D52F7D900431327 = {
 			isa = PBXGroup;
 			children = (
+				FE7D02C41D53426900431327 /* Starscream.framework */,
 				FE7D02921D52F7D900431327 /* MrRobotControlPad */,
 				FE7D02A91D52F7DA00431327 /* MrRobotControlPadTests */,
 				FE7D02B41D52F7DA00431327 /* MrRobotControlPadUITests */,
@@ -106,6 +129,8 @@
 				FE7D029C1D52F7D900431327 /* Assets.xcassets */,
 				FE7D029E1D52F7D900431327 /* LaunchScreen.storyboard */,
 				FE7D02A11D52F7DA00431327 /* Info.plist */,
+				FE7D02C71D53439B00431327 /* TabController.swift */,
+				FE7D02CC1D5345C200431327 /* StartupController.swift */,
 			);
 			path = MrRobotControlPad;
 			sourceTree = "<group>";
@@ -138,6 +163,7 @@
 				FE7D028C1D52F7D900431327 /* Sources */,
 				FE7D028D1D52F7D900431327 /* Frameworks */,
 				FE7D028E1D52F7D900431327 /* Resources */,
+				FE7D02CB1D5344C000431327 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +222,7 @@
 				TargetAttributes = {
 					FE7D028F1D52F7D900431327 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4U8GUC8TZG;
 					};
 					FE7D02A51D52F7DA00431327 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -260,6 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE7D02981D52F7D900431327 /* SecondViewController.swift in Sources */,
+				FE7D02CD1D5345C200431327 /* StartupController.swift in Sources */,
+				FE7D02C81D53439B00431327 /* TabController.swift in Sources */,
 				FE7D02941D52F7D900431327 /* AppDelegate.swift in Sources */,
 				FE7D02961D52F7D900431327 /* FirstViewController.swift in Sources */,
 			);
@@ -403,10 +432,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MrRobotControlPad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.ydreams.MrRobotControlPad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -414,10 +451,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MrRobotControlPad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.ydreams.MrRobotControlPad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

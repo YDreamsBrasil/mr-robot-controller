@@ -10,7 +10,16 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
+
+        if let tbc = self.tabBarController as? TabController {
+
+            tbc.sendFeedbackMessage("Hello World")
+        }
+        
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
